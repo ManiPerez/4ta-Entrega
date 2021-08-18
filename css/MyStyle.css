@@ -1,0 +1,505 @@
+/* ======== Propiedades Generales ======== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html,body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0px;
+    overflow-x: hidden;
+    top: 0px;
+    left: 0px;
+}
+
+/* ======== NAVBAR ======== */
+
+a {
+    text-decoration: none;
+    color: #0d6efd;
+}
+
+a:hover {
+    color: rgb(247, 65, 52) !important;
+}
+
+.navbar-toggler {
+    background: #f74134 !important;
+    border: none !important;
+    padding: 10px 6px !important;
+    outline: none !important;
+}
+
+.navbar .navbar-toggler span {
+    display: block !important;
+    width: 22px !important;
+    height: 2px !important;
+    border: 1px !important;
+    background: #fff !important;
+}
+
+.navbar .navbar-toggler span + span {
+    margin-top: 4px !important;
+    width: 18px !important;
+    margin-left: 4px !important;
+}
+
+.navbar .navbar-toggler span + span + span {
+    width: 10px !important;
+    margin-left: 10px !important;
+}
+
+.navbar-expand-lg .navbar-nav .navbar-link {
+    padding: 1rem 1.2rem !important;
+    font-size: 1.4rem !important;
+    position: relative !important;
+}
+
+.navbar-expand-lg .navbar-nav .navbar-link:hover {
+    border-top: 4px solid #f74134 !important;
+}
+
+.navbar-expand-lg .navbar-nav .navbar-link.active {
+    border-top: 4px solid #f74134 !important;
+    color: #f74134 !important;
+}
+
+.navbar-nav button {
+    padding: 1.2rem 0 !important;
+}
+
+.navbar-nav .btn:hover {
+    background-color: #0d6efd !important;
+}
+
+#slp__titulo {
+    color: #0d6efd !important;
+    font-weight: bold !important;
+}
+
+#slp__cardTitulo {
+    color: #0d6efd !important;
+    font-weight: bold !important;
+}
+
+/* Font Awesome Icon */
+
+.fa-drafting-compass {
+    color: #f74134;
+    font-size: 25px;
+}
+
+/* ======== SLIDER DE IMAGENES ======== */
+
+.carousel-inner {
+    max-height: 32rem;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-width: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: #000;
+    opacity: 0.7;
+}
+
+.carousel-caption {
+    bottom: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.carousel-caption h5 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    font-size: 20px;
+    top: 2rem;
+    font-style: italic;
+}
+
+/* ======== SECCION 1 ======== */
+
+.slp-card {
+    border: none !important;
+    border-radius: none !important;
+}
+
+@media (max-width:768px) {
+    .card-fila {
+        width: 100% !important;
+        align-content: center !important;
+    }
+}
+
+@media (max-width:480px) {
+    .card-fila {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+}
+
+/* ======== SECCION 2 ======== */
+
+#fondoSeccion {
+    background-color: #d3e5ff !important;
+}
+
+#fondoCard {
+    background-color: #d3e5ff !important;
+}
+
+.Seccion2-card {
+    border: 1px white !important;
+}
+
+.EnfoqueCard {
+    border-radius: 50% !important;
+}
+
+#enfoque__cardTitulo {
+    color: #0d6efd !important;
+    font-weight: bold !important;
+}
+
+/* ======== FOOTER ======== */
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+.copy {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.paraTransicion:hover {
+    transition: 3s;
+    font-size: 2rem;
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #0d6efd;
+    text-decoration: none;
+    padding-right: 1rem;
+}
+
+.sociales a:hover {
+    color: #f74134;
+}
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1000px;
+    }
+}
+
+@media (min-width:768px) {
+    .sociales {
+        width: auto;
+        overflow: hidden;
+    }
+
+    footer .contenedor {
+        justify-content: space-between;
+    }
+}
+
+
+/** ======== Pagina-4-Contacto ======== */
+
+#caracteristicas .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#caracteristicas article  {
+    margin: 15px;
+}
+
+#caracteristicas img  {
+    width: 100%;
+    max-width: 280px;
+}
+
+#caracteristicas h4  {
+    width: 100%;
+    max-width: 280px;
+    color: #0d6efd;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-style: normal;
+}
+
+#caracteristicas p  {
+    width: 100%;
+    max-width: 280px;
+    text-align: justify;
+    color: rgb(17, 16, 16);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    padding-bottom: 10px;
+}
+
+#contacto h4 {
+    color: rgb(17, 16, 16);
+    font-size: 20px;
+    font-weight: 15;
+    letter-spacing: 1px;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    5% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/** ======== Pagina-3-Nosotros ======== */
+
+#Nosotros {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#Nosotros h2 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+#Nosotros h4 {
+    color: rgb(17, 16, 16);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#Nosotros .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#Nosotros .contenedor h4 {
+    color: #0d6efd;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+#Nosotros .contenedor p {
+    color: rgb(17, 16, 16);
+    text-align: justify;
+    font-style: italic;
+    font-weight: 2px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.Nosotros_div {
+    margin: 20px;
+}
+
+.Nosotros_div img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding-bottom: 10px;
+}
+
+#Nosotros .Nosotros_div h4 {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    color: #0d6efd;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-style: normal;
+}
+
+#Nosotros .Nosotros_div p {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    color: rgb(17, 16, 16);
+}
+
+/** ======== Pagina-4-Formulario ======== */
+
+#Formulario {
+    display: flex;
+    min-height: 100vh;
+}
+
+.form {
+    background: rgb(243, 243, 243);
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center ;
+}
+
+.form__tittle {
+    color: #0d6efd;
+    margin-bottom: .5em;
+}
+
+#centrar {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.form__paragraph {
+    font-weight: 300;
+}
+
+.form__link {
+    font-weight: 400;
+    color: rgb(17, 16, 16);
+}
+
+.form__container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.form__group {
+    position: relative;
+    --color: #5757577e;
+}
+
+.form__input {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form__input:not(:placeholder-shown) {
+    color: #4d4646;
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #0d6efd;
+}
+
+.form__label {
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form__submit {
+    background: #0d6efd;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.form__line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #0d6efd;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.form__input:focus ~ .form__line,
+.form__input:not(:placeholder-shown) ~ .form__line {
+    transform: scale(1);
+}
+
+@media (max-width:425px) {
+    .form__tittle {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:480px)  {
+    .icon-menu  {
+        display: block;
+    }
+    h1 {
+        font-size: 20px;
+        align-items: center;
+    }
+}
+
+
+/* ======== MEDIA QUERIES PANTALLA SM ======== */
+
+@media (max-width:768px) {
+    #intro {
+        width: 90% !important;
+    }
+}
+
+
+
+
+
