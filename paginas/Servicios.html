@@ -14,142 +14,114 @@
     <!-- Font Awesome Icon -->
     <script src="https://kit.fontawesome.com/2e08a2323e.js" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- MyStyle CSS -->
-    <link rel="stylesheet" href="../css/MyStyle.css">
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">
 
     <title>Pérez e Hijo Agrimensores | Nuestros servicios</title>
   </head>
   
   <body>
-    <!-- ======= BANNER ======= -->
-    <section class="conteiner-fluid bg-primary d-flex justify-content-center">
-      <p class="text-light mb-0 p-2 fs-6">Contactanos (2474) 403524</p>
+    <!--------------- Header --------------->
+    <section class="header">
+      <p>Contactanos (2474) 403524</p>
     </section>
 
-    <!-- ======= NAVBAR ======= -->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <div class="container">
-            <a class="navbar-brandbg-primary fw-bold" href="../index.html">
-              <i class="fas fa-drafting-compass"></i> Pérez e Hijo Agrimensores
-            </a>
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0 fw-bold">
-              <li class="nav-item">
-                <a class="nav-link active text-primary" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-primary" href="../paginas/Servicios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Servicios
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item text-primary" href="../paginas/Servicios.html">Estados Parcelarios</a></li>
-                  <li><a class="dropdown-item text-primary" href="../paginas/Servicios.html">Amojonamientos</a></li>
-                  <li><a class="dropdown-item text-primary" href="../paginas/Servicios.html">Subdivisiones y Loteos</a></li>
-                  <li><a class="dropdown-item text-primary" href="../paginas/Servicios.html">Mensuras de Posesión</a></li>
-                  <li><a class="dropdown-item text-primary" href="../paginas/Servicios.html">Propiedad Horizontal</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" href="../paginas/Nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" href="../paginas/Contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <!------------- Navbar Section ------------->
+    <nav class="navbar">
+      <div class="navbar__logo">
+          <i class="fas fa-drafting-compass navbar__logo--icon"></i>
+          <a href="../index.html" class="navbar__logo--text">Pérez e Hijo Agrimensores</a>
+      </div>
+      <div class="navbar__bars">
+          <i class="fas fa-bars"></i>
+      </div>
+      <div class="navbar__menu">
+          <ul class="navbar__menu">
+              <li><a href="../index.html" class="navbar__menu--links">Inicio</a></li>
+              <li><a href="../paginas/Servicios.html" class="navbar__menu--links">Servicios</a></li>
+              <li><a href="../paginas/Nosotros.html" class="navbar__menu--links">Nosotros</a></li>
+              <li><a href="../paginas/Contacto.html" class="navbar__menu--links">Contacto</a></li>
+          </ul>            
+      </div>
+    </nav>
 
-      <!-- ======== SECCION 1: Servicios ======== -->
-      <section class="conteiner-fluid">
-        <div class="w-50 mx-auto text-center pt-5 pb-5">
-            <h4 class="fs-3 pb-4" id="slp__titulo">Servicios</h4>
-            <span class="fs-6 fw-bold font-italic">Brindamos todos los servicios relacionados con la profesión</span>
+    <!------------- Servicios Section ------------->
+    <section class="services">
+      <div class="services__tittle">
+        <h3>Servicios</h3>
+        <p>Brindamos todos los servicios relacionados con la profesión</p>
+      </div>
+      <div class="services__container">
+          <div class="services__card">
+              <div class="services__card--img">
+                  <img src="../images/servicio1.jpg" alt="Ilustración de la Agrimensura">
+              </div>
+              <div class="services__card--body">
+                  <h4>Estados Parcelarios</h4>
+                  <p>La actualización del Estado Parcelario y la Cédula Catastral son necesarios para cualquier compra-venta de un inmueble.</p>
+              </div>
+          </div>
+          <div class="services__card">
+              <div class="services__card--img">
+                  <img src="../images/servicio2.png" alt="Ilustración de la Agrimensura">
+              </div>
+              <div class="services__card--body">
+                  <h4>Amojonamientos</h4>
+                  <p>¿Necesita delimitar su propiedad o saber si esta siendo invadido?</p>
+              </div>
+          </div>
+          <div class="services__card">
+              <div class="services__card--img">
+                  <img src="../images/servicio3.png" alt="Ilustración de la Agrimensura">
+              </div>
+              <div class="services__card--body">
+                  <h4 >Subdivisiones y Loteos</h4>
+                  <p>Si posee un terreno de grandes dimensiones y necesita lotearlo, o tiene pensado realizar un emprendimiento inmobiliario de grandes dimensiones.</p>
+              </div>
+          </div>           
+      </div>
+      <div class="services__container">
+        <div class="services__card">
+          <div class="services__card--img">
+              <img src="../images/servicio4.jpg" alt="Ilustración de la Agrimensura">
+          </div>
+          <div class="services__card--body">
+              <h4 >Mensuras de Posesión / Usurpaciones</h4>
+              <p>¿Compró una propiedad o un terreno y no puede escriturar? ¿ Esta en posesión de un inmueble y quiere escriturarlo a su nombre?</p>
+          </div>
+      </div>
+      <div class="services__card">
+        <div class="services__card--img">
+            <img src="../images/servicio5.png" alt="Ilustración de la Agrimensura">
         </div>
-        <div class="container pt-3 pb-3">
-            <div class="row card-fila">
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card" style="width: 18rem;height: 27rem;">
-                    <img src="../imagenes/agrim7.jpg" class="card-img-top" alt="Imagen" style="width: 18rem;height: 15rem;">
-                    <div class="card-body">
-                      <h5 id="slp__cardTitulo">Estados Parcelarios</h5>
-                      <p class="card-text">La actualización del Estado Parcelario y la Cédula Catastral son necesarios para cualquier compra-venta de un inmueble.</p>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card" style="width: 18rem;height: 27rem;">
-                    <img src="../imagenes/agrim8.png" class="card-img-top" alt="Imagen" style="width: 18rem;height: 15rem;">
-                    <div class="card-body">
-                      <h5 id="slp__cardTitulo">Amojonamientos</h5>
-                      <p class="card-text">¿Necesita delimitar su propiedad o saber si esta siendo invadido?</p>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card pb-3" style="width: 18rem;height: 27rem;">
-                    <img src="../imagenes/agrim9.png" class="card-img-top" alt="Imagen" style="width: 18rem;height: 15rem;">
-                    <div class="card-body">
-                      <h5 id="slp__cardTitulo">Subdivisiones y Loteos</h5>
-                      <p class="card-text">Si posee un terreno de grandes dimensiones y necesita lotearlo, o tiene pensado realizar un emprendimiento inmobiliario de grandes dimensiones.</p>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card pb-3" style="width: 18rem;height: 27rem;">
-                    <img src="../imagenes/agrim10.jpg" class="card-img-top" alt="Imagen" style="width: 18rem;height: 15rem;">
-                    <div class="card-body">
-                      <h5 id="slp__cardTitulo">Mensuras de Posesión / Usurpaciones</h5>
-                      <p class="card-text">¿Compró una propiedad o un terreno y no puede escriturar? ¿ Esta en posesión de un inmueble y quiere escriturarlo a su nombre?</p>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card pb-3" style="width: 18rem;height: 27rem;">
-                    <img src="../imagenes/agrim11.png" class="card-img-top" alt="Imagen" style="width: 18rem;height: 15rem;">
-                    <div class="card-body">
-                      <h5 id="slp__cardTitulo">Planos de Propiedad Horizontal</h5>
-                      <p class="card-text">¿Construyó casas dentro de su propiedad y desea venderlas por separado?, ¿Quiere realizar un emprendimiento dentro de su propiedad?</p>
-                    </div>
-                  </div>
-              </div>
+        <div class="services__card--body">
+            <h4 >Planos de Propiedad Horizontal</h4>
+            <p>¿Construyó casas dentro de su propiedad y desea venderlas por separado?, ¿Quiere realizar un emprendimiento dentro de su propiedad?</p>
+        </div>
+    </div>
+      </div>
+    </section>
+
+    <!--------------- Footer --------------->
+    <footer class="footer"> 
+        <div class="footer__container">
+            <div class="footer__container--left">
+                <p>Pérez e Hijo Agrimensores &copy; 2021</p>
             </div>
-          </div>
-      </section>
-
-      <!-- ======== FOOTER ======== -->
-      <footer> 
-        <div class="contenedor pt-4">
-            <p class="copy">Pérez e Hijo Agrimensores &copy; 2021</p>
-            <!-- Transicion -->
-            <div class="sociales paraTransicion">
-              <a class="navbar-brandbg-primary fw-bold" href="#">
+            <!-- Transition -->
+            <div class="footer__container--right">
+              <a href="#">
                 <i class="fab fa-linkedin-in"></i>
               </a>
-              <a class="navbar-brandbg-primary fw-bold" href="#">
+              <a href="#">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a class="navbar-brandbg-primary fw-bold" href="#">
+              <a href="#">
                 <i class="fab fa-instagram"></i>
               </a>
             </div>
         </div>
     </footer>
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>
 </html>

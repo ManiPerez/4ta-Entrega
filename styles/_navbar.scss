@@ -1,0 +1,84 @@
+@import "colors";
+@import "media-queries";
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    background: $light;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1200px) / 2);
+    z-index: 10;
+    position: relative;
+
+    &__logo {
+        cursor: pointer;
+        margin-left: 24px;
+        @extend %align-center;
+
+        &--icon {
+            color: $secondary;
+            font-size: 1.3rem;
+        }
+
+        &--text {
+            color: $primary;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-left: 5px;
+
+            &:hover {
+                color: $secondary;
+                transition: all 0.3s ease;
+            }
+
+            @include mobile {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__bars {
+        opacity: 0;
+
+        @include tablet {
+            color: $primary;
+            opacity: 1;
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            font-size: 2rem;
+        }
+    }
+
+    &__menu {
+        @extend %align-center;
+        list-style: none;
+        text-align: center;
+        margin-right: 24px;
+
+        @include tablet {
+            display: none;
+        }
+
+        &--links {
+            color: $primary;
+            @extend %align-center;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0 1rem;
+
+            &:hover {
+                color: $secondary;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}
+
