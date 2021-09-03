@@ -15,7 +15,7 @@
 
 /*----------Header Section----------*/
 
-.header {
+.contact__header {
     background-color: $primary;
     width: 100%;
     height: auto;
@@ -62,15 +62,25 @@
             @include mobile {
                 line-height: 1.5;
             }
-        }
 
-        &--left h2 {
-            color: $primary;
-            font-size: 3rem;
-            font-weight: bold;
+            h2 {
+                color: $primary;
+                font-size: 3rem;
+                font-weight: bold;
+    
+                @include mobile {
+                    font-size: 2rem;
+                }
+            }
 
-            @include mobile {
-                font-size: 2rem;
+            p {
+                color: $dark;
+                font-size: 1.5rem;
+                font-weight: 500;
+    
+                @include mobile {
+                    font-size: 1.3rem;
+                }
             }
         }
 
@@ -80,16 +90,6 @@
             font-style: italic;
             text-decoration: underline 2px;
             margin-bottom: 1rem;
-        }
-
-        &--left p {
-            color: $dark;
-            font-size: 1.5rem;
-            font-weight: 500;
-
-            @include mobile {
-                font-size: 1.3rem;
-            }
         }
 
         &--right {
@@ -258,8 +258,7 @@
         }
 
         &--img {
-            overflow: hidden;
-            height: 200px;
+            width: 18rem;
 
             img {
                 width: 100%;
@@ -294,32 +293,59 @@
 /*----------Video Section----------*/
 
 .video {
-    background-image: url(../images/video-bg.png);
-    background-repeat: repeat;
-    width: 100vw;
-    height: auto;
-    padding: 2rem 2rem 4rem 2rem;
+    background-color: $secondary;
+    width: 100%;
+    padding: 2rem;
+    align-content: center;
+
+    @include mobile {
+        padding: 1.5rem;
+    }
 
     &__tittle {
-        padding: 0 0 3rem 0;
-        align-items: center;
+        text-align: center;
 
         h3 {
             color: $primary;
             font-size: 1.7rem;
             text-align: center;
             font-weight: bold;
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
+            padding-bottom: 1.5rem;
 
             @include mobile {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
         }
     }
 
     &__container {
-        justify-content: center;
+        position: relative;
+        align-content: center;
+        width: 100%;
+        height: 0;
+        padding-bottom: 35%;
+
+        @include tablet {
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 */
+        }
+
+        iframe {
+            align-self: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+
+            @include tablet {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+        /*align-content: center;
         max-width: 700px;
         margin: auto;
 
@@ -327,58 +353,61 @@
             iframe {
                 width: 280px;
                 align-items: center;
-                padding-left: 1.2rem;
             }
-        }
-    }
-}
+        }*/
 
 /*-------------Footer-------------*/
 
 .footer {
+    padding: 2rem;
+
+    @include mobile {
+        padding: 1.5rem;
+    }
+
     &__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        align-items: center;
-        justify-items: center;
-        margin: 0 auto;
-        height: auto;
+        margin: 0;
         z-index: 1;
         width: 100%;
-        max-width: 1000px;
-        padding: 2rem;
 
-        @include tablet {
+        @include mobile {
             grid-template-columns: 1fr;
             height: 100%;
         }
 
         &--left {
-            width: 100%;
             line-height: 1.3;
+            padding-left: 3.3rem;
 
-            @include tablet {
-                padding: 2rem 0;
+            p {
+                font-size: 1.1rem;
+                color: $primary;
+                font-weight: bold;
             }
 
             @include mobile {
-                line-height: 1.5;
-            }
-            
-            p {
-                font-size: 1.3rem;
-                color: $primary;
-                font-weight: bold;
+                padding: 0;
+              
+                p {
+                    text-align: center;
+                    font-size: 1rem;
+                    padding-bottom: 1rem;
+                }
             }
         }
 
         &--right {
-            justify-content: right;
+            text-align: right;
+            padding-right: 3rem;
 
             a {
                 color: $primary;
                 font-size: 1.5rem;
                 text-decoration: none;
+                padding-left: 0.3rem;
+                padding-right: 0.3rem;
 
                 :hover {
                     color: $secondary;
@@ -390,14 +419,9 @@
                 transition: 1s;
             }
 
-            @include tablet {
-                width: auto;
-                overflow: hidden;
-            }
-
             @include mobile {
-                width: auto;
-                overflow: hidden;
+                text-align: center;
+                padding: 0;
             }
         }
     }
