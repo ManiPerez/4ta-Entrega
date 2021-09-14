@@ -22,101 +22,105 @@
 
   
   <body>
-    <!--------------- Header --------------->
-    <section class="header">
-      <p>Contactanos (2474) 403524</p>
-    </section>
+    <header>
+      <!-------------Navbar Section ------------->
+      <nav class="navbar navbarScroll" id="bgPages">
+          <a href="../index.html" class="navbar__brand"><i class="fas fa-drafting-compass"></i> Pérez e Hijo Agrimensores</a>   
+          <div class="navbar__menu">
+              <input type="checkbox" id="check-menu">
+              <label for="check-menu" class="check-btn">
+                  <i class="fas fa-bars"></i>
+              </label>
+              <ul>
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="../paginas/Servicios.html">Servicios</a></li>
+                  <li><a href="../paginas/Nosotros.html">Nosotros</a></li>
+                  <li><a href="../paginas/FAQ.html">FAQ</a></li>
+                  <li><a href="../paginas/Contacto.html">Contacto</a></li>
+              </ul>
+          </div>                   
+      </nav>
+    </header>
 
-    <!------------- Navbar Section ------------->
-    <nav class="navbar">
-      <div class="navbar__logo">
-          <i class="fas fa-drafting-compass navbar__logo--icon"></i>
-          <a href="../index.html" class="navbar__logo--text">Pérez e Hijo Agrimensores</a>
-      </div>
-      <div class="navbar__bars">
-          <i class="fas fa-bars"></i>
-      </div>
-      <div class="navbar__menu">
-          <ul class="navbar__menu">
-              <li><a href="../index.html" class="navbar__menu--links">Inicio</a></li>
-              <li><a href="../paginas/Servicios.html" class="navbar__menu--links">Servicios</a></li>
-              <li><a href="../paginas/Nosotros.html" class="navbar__menu--links">Nosotros</a></li>
-              <li><a href="../paginas/Contacto.html" class="navbar__menu--links">Contacto</a></li>
-          </ul>            
-      </div>
-    </nav>>
-
-    <!------------- Contacto ------------->
     <section class="contact">
-      <div class="contact__tittle">
-        <p>Prestamos la máxima atención a nuestros clientes</p>
-        <p>Si tienes preguntas, no dudes en visitarnos o contactarnos</p>
-        <h3>Ubicación</h3>
-      </div>
-      <div class="contact__container">
-        <div class="contact__container--left">
-          <img src="../images/mapa.png" alt="Ilustración de la Agrimensura" class="contact__container--img">
+      <!------------- Contacto------------->
+      <div class="contact__box">
+        <div class="contact__box__tittle">
+          <h3><span>C</span>ontactanos</h3>
+          <p>Prestamos la máxima atención a nuestros clientes</p>
+          <p>Si tienes preguntas, no dudes en visitarnos o contactarnos</p>
         </div>
-        <div class="contact__container--right">
-            <i class="fas fa-map-marker-alt"></i><h4> Hipólito Yrigoyen 292, Rojas, Buenos Aires</h4>
-            <i class="fas fa-phone"></i>
-            <h4> (2474) 403524</h4>
-            <i class="fas fa-envelope"></i><h4>agrim.perezehijo@gmail.com</h4>                     
-        </div>
-      </div>
-    </section>
-
-    <!--------------- Formulario --------------->
-    <section id="Formulario">
-        <form class="form">
-            <h2>Contacto</h2>
-            <p>Envíanos cualquier consulta</p>
-            <div class="form__container">
-                <div class="form__group">
-                    <input type="text" id="name" class="form__input" placeholder=" ">
-                    <label for="name" class="form__label">Nombre:</label>
-                    <span class="form__line"></span>
-                </div>
-                <div class="form__group">
-                    <input type="text" id="mail" class="form__input" placeholder=" ">
-                    <label for="mail" class="form__label">Mail:</label>
-                    <span class="form__line"></span>
-                </div>                
-                <div class="form__group">
-                    <input type="text" id="tel" class="form__input" placeholder=" ">
-                    <label for="tel" class="form__label">Tel:</label>
-                    <span class="form__line"></span>
-                </div>                
-                <div class="form__group">
-                    <input type="text" id="mesage" class="form__input" placeholder=" ">
-                    <label for="mesage" class="form__label">Mensaje:</label>
-                    <span class="form__line"></span>
-                </div>
-                <input type="submit" class="form__submit" value="Enviar">
+        <div class="contact-container">
+          <!------------- Ubicación ------------->
+          <div class="location">
+            <div class="location__container">
+              <div class="location-img">
+                  <img src="../images/mapa.png" alt="Geolocalización de nuestra oficina">
+              </div>
+              <div class="location-text">
+                  <h3><span>U</span>bicación</h3>
+                  <i class="fas fa-map-marker-alt"></i><p> Hipólito Yrigoyen 292, Rojas, Buenos Aires</p>
+                  <i class="fas fa-phone"></i>
+                  <p> (2474) 403524</p>
+                  <i class="fas fa-envelope"></i><p>agrim.perezehijo@gmail.com</p> 
+              </div>
             </div>
-        </form>
+          </div>
+          <!--------------- Formulario --------------->
+          <div class="form">
+            <form class="form__box">
+                <h3><span>M</span>ensaje</h3>
+                <p>Envíanos cualquier consulta</p>
+                <div class="form__container">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-input" placeholder=" ">
+                        <label for="name" class="form-label">Nombre:</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="mail" class="form-input" placeholder=" ">
+                        <label for="mail" class="form-label">Mail:</label>
+                        <span class="form-line"></span>
+                    </div>                
+                    <div class="form-group">
+                        <input type="text" id="tel" class="form-input" placeholder=" ">
+                        <label for="tel" class="form-label">Tel:</label>
+                        <span class="form-line"></span>
+                    </div>                
+                    <div class="form-group">
+                        <input type="text" id="mesage" class="form-input" placeholder=" ">
+                        <label for="mesage" class="form-label">Mensaje:</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <input type="submit" class="form-submit" value="Enviar">
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--------------- Footer --------------->
     <footer class="footer"> 
       <div class="footer__container">
-          <div class="footer__container--left">
+          <div class="footer-brand">
               <p>Pérez e Hijo Agrimensores &copy; 2021</p>
           </div>
-          <!-- Transition -->
-          <div class="footer__container--right">
-            <a href="#">
+          <div class="footer-links">
+            <a href="https://www.linkedin.com/in/magdalena-ines-perez/">
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/magdalena-ines-perez/">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/magdalena-ines-perez/">
               <i class="fab fa-instagram"></i>
             </a>
           </div>
       </div>
   </footer>
+
+  <script src="../js/main.js"></script>
             
 </body>
 </html>

@@ -1,93 +1,168 @@
 @import "colors";
 @import "media-queries";
 
-%align-center {
-    display: flex;
-    align-items: center;
-}
-
 .navbar {
-    background: $light;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 80px;
+    height: 3rem;
+    padding: 40px 100px;
+    z-index: 10000;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem calc((100vw - 1200px) / 2);
-    z-index: 10;
-    position: relative;
+    align-items: center;
+    transition: all 0.5s;
 
-    &__logo {
-        cursor: pointer;
-        margin-left: 24px;
+    &__brand {
+        color: $tittle-color-light;
+        font-weight: 700;
+        font-size: 18px;
+        text-decoration: none;
 
-        @extend %align-center;
-
-        &--icon {
-            color: $secondary;
-            font-size: 1.3rem;
+        &:hover {
+            color: $key-color;
         }
 
-        &--text {
-            color: $primary;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-left: 5px;
-
-            &:hover {
-                color: $secondary;
-                transition: all 0.3s ease;
-            }
-
-            @include mobile {
-                font-size: 1rem;
-            }
-        }
-    }
-
-    &__bars {
-        opacity: 0;
-
-        @include tablet {
-            color: $primary;
-            opacity: 1;
-            position: absolute;
-            top: 22px;
-            right: 20px;
-            font-size: 2rem;
+        i {
+            color: $key-color;
+            font-size: 22px;
         }
     }
 
     &__menu {
-        background-color: $light_translucid;
-        @extend %align-center;
-        list-style: none;
-        text-align: center;
-        margin-right: 24px;
+        position: relative;
 
-        @include tablet {
-            display: none;
-            padding: 0;
-            margin: 0;
+        ul {
 
             li {
-                margin-bottom: 1rem;
+                display: inline-block;
+
+                a {
+                    position: relative;
+                    color: $card-bg-focus-color;
+                    font-size: 18px;
+                    font-weight: 300;
+                    text-decoration: none;
+                    margin-left: 1.5rem;
+                    transition: 0.3s ease;
+                
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background: $key-color;
+                        width: 0;
+                        height: 100%;
+                        bottom: 0;
+                        left: 0;
+                        transition: 0.3s ease;
+                        z-index: -1;
+                        font-weight: 500;
+                    }
+    
+                    &:hover::before {
+                        width: 70%;
+                        font-weight: 500;
+                    }
+                }
             }
         }
 
-        &--links {
-            color: $primary;
-            @extend %align-center;
-            justify-content: center;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 0 1rem;
+        .check-btn {
+            display: none;
+            color: $card-bg-focus-color;
+            font-size: 2.5em;
+            float: right;
+            margin-right: -2em;
+            cursor: pointer;
 
-            &:hover {
-                color: $secondary;
-                transition: all 0.3s ease;
+        }
+
+        #check-menu {
+            display: none;
+        }
+    }
+}
+/* Codigo JS para Scrolling navbar*/
+.navbarScroll.active {
+    position: fixed;
+    height: 4rem;
+    z-index: 999;
+    background-image: linear-gradient(
+        $first-color,
+        $tittle-color-dark
+    );
+    transition: all 0.5s;
+} 
+
+@media (max-width:1040px) {
+    .navbar {
+        height: 4rem;
+        background-image: linear-gradient(
+            $first-color,
+            $tittle-color-dark
+        );
+
+        &__menu {
+
+            .check-btn {
+                display: block;
+            }
+
+            ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: $tittle-color-dark;
+                height: auto;
+                left: -100%;
+                top: 4.5em;
+                text-align: center;
+                transition: all 0.5s;
+
+                li {
+                    display: block;
+                    padding: 20px;
+                    text-align: center;
+                    margin: 1em;
+                    line-height: 1em;
+
+
+                    a {
+                        font-size: 30px;
+
+                        &:hover::before,
+                        .active::before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            #check-menu:checked ~ ul {
+                left: 0;
             }
         }
     }
 }
+/*La navbar en el index no tiene bg-color hasta hacer scroll. Aplico id para que en las demás páginas la navbar tenga siempre bg-color*/
+#bgPages {
+    position: block;
+    background-image: linear-gradient(
+        $first-color,
+        $tittle-color-dark
+    );
+}
+
+
+
+
+
+
+
+
+
+
+
+
 

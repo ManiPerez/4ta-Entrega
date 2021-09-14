@@ -21,34 +21,30 @@
   </head>
 
   <body>
-    <!--------------- Header --------------->
-    <section class="header">
-      <p>Contactanos (2474) 403524</p>
-    </section>
-
-    <!------------- Navbar Section ------------->
-    <nav class="navbar">
-      <div class="navbar__logo">
-          <i class="fas fa-drafting-compass navbar__logo--icon"></i>
-          <a href="../index.html" class="navbar__logo--text">Pérez e Hijo Agrimensores</a>
-      </div>
-      <div class="navbar__bars">
-          <i class="fas fa-bars"></i>
-      </div>
-      <div class="navbar__menu">
-          <ul class="navbar__menu">
-              <li><a href="../index.html" class="navbar__menu--links">Inicio</a></li>
-              <li><a href="../paginas/Servicios.html" class="navbar__menu--links">Servicios</a></li>
-              <li><a href="../paginas/Nosotros.html" class="navbar__menu--links">Nosotros</a></li>
-              <li><a href="../paginas/Contacto.html" class="navbar__menu--links">Contacto</a></li>
-          </ul>            
-      </div>
-    </nav>>
+    <header>
+      <!-------------Navbar Section ------------->
+      <nav class="navbar navbarScroll" id="bgPages">
+          <a href="../index.html" class="navbar__brand"><i class="fas fa-drafting-compass"></i> Pérez e Hijo Agrimensores</a>   
+          <div class="navbar__menu">
+              <input type="checkbox" id="check-menu">
+              <label for="check-menu" class="check-btn">
+                  <i class="fas fa-bars"></i>
+              </label>
+              <ul>
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="../paginas/Servicios.html">Servicios</a></li>
+                  <li><a href="../paginas/Nosotros.html">Nosotros</a></li>
+                  <li><a href="../paginas/FAQ.html">FAQ</a></li>
+                  <li><a href="../paginas/Contacto.html">Contacto</a></li>
+              </ul>
+          </div>                   
+      </nav>
+  </header>
 
     <!------------ Nosotros Section ------------>
     <section class="us">
       <div class="us__tittle">
-          <h3>Nuestros enfoques</h3>
+          <h3><span>N</span>uestros enfoques</h3>
           <p>Con más de 40 años en la actividad, te brindamos todas las posibilidades para que lleves adelante tus proyectos relacionados a tu inmueble y a tu obra.</p>
           <p>Te aseguramos profesionalismo, celeridad y calidad en los trabajos, gracias a la tecnología disponible en equipos e infraestructura, movilidad y, sobre todo,  a las ganas de brindarte las soluciones que estés necesitando.</p>
       </div>
@@ -79,23 +75,24 @@
     <!--------------- Footer --------------->
     <footer class="footer"> 
       <div class="footer__container">
-          <div class="footer__container--left">
+          <div class="footer-brand">
               <p>Pérez e Hijo Agrimensores &copy; 2021</p>
           </div>
-          <!-- Transition -->
-          <div class="footer__container--right">
-            <a href="#">
+          <div class="footer-links">
+            <a href="https://www.linkedin.com/in/magdalena-ines-perez/">
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/magdalena-ines-perez/">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/magdalena-ines-perez/">
               <i class="fab fa-instagram"></i>
             </a>
           </div>
       </div>
-  </footer>
+    </footer>
+
+  <script src="../js/main.js"></script>
 
   </body>
 </html>

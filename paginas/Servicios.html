@@ -21,34 +21,30 @@
   </head>
   
   <body>
-    <!--------------- Header --------------->
-    <section class="header">
-      <p>Contactanos (2474) 403524</p>
-    </section>
-
-    <!------------- Navbar Section ------------->
-    <nav class="navbar">
-      <div class="navbar__logo">
-          <i class="fas fa-drafting-compass navbar__logo--icon"></i>
-          <a href="../index.html" class="navbar__logo--text">Pérez e Hijo Agrimensores</a>
-      </div>
-      <div class="navbar__bars">
-          <i class="fas fa-bars"></i>
-      </div>
-      <div class="navbar__menu">
-          <ul class="navbar__menu">
-              <li><a href="../index.html" class="navbar__menu--links">Inicio</a></li>
-              <li><a href="../paginas/Servicios.html" class="navbar__menu--links">Servicios</a></li>
-              <li><a href="../paginas/Nosotros.html" class="navbar__menu--links">Nosotros</a></li>
-              <li><a href="../paginas/Contacto.html" class="navbar__menu--links">Contacto</a></li>
-          </ul>            
-      </div>
-    </nav>
+    <header>
+      <!-------------Navbar Section ------------->
+      <nav class="navbar navbarScroll" id="bgPages">
+          <a href="../index.html" class="navbar__brand"><i class="fas fa-drafting-compass"></i> Pérez e Hijo Agrimensores</a>   
+          <div class="navbar__menu">
+              <input type="checkbox" id="check-menu">
+              <label for="check-menu" class="check-btn">
+                  <i class="fas fa-bars"></i>
+              </label>
+              <ul>
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="../paginas/Servicios.html">Servicios</a></li>
+                  <li><a href="../paginas/Nosotros.html">Nosotros</a></li>
+                  <li><a href="../paginas/FAQ.html">FAQ</a></li>
+                  <li><a href="../paginas/Contacto.html">Contacto</a></li>
+              </ul>
+          </div>                   
+      </nav>
+  </header>
 
     <!------------- Servicios Section ------------->
     <section class="services">
       <div class="services__tittle">
-        <h3>Servicios</h3>
+        <h3><span>S</span>ervicios</h3>
         <p>Brindamos todos los servicios relacionados con la profesión</p>
       </div>
       <div class="services__container">
@@ -78,50 +74,58 @@
                   <h4 >Subdivisiones y Loteos</h4>
                   <p>Si posee un terreno de grandes dimensiones y necesita lotearlo, o tiene pensado realizar un emprendimiento inmobiliario de grandes dimensiones.</p>
               </div>
-          </div>           
-      </div>
-      <div class="services__container">
-        <div class="services__card">
-          <div class="services__card--img">
-              <img src="../images/servicio4.jpg" alt="Ilustración de la Agrimensura">
           </div>
-          <div class="services__card--body">
-              <h4 >Mensuras de Posesión / Usurpaciones</h4>
-              <p>¿Compró una propiedad o un terreno y no puede escriturar? ¿ Esta en posesión de un inmueble y quiere escriturarlo a su nombre?</p>
+          <div class="services__card">
+            <div class="services__card--img">
+                <img src="../images/servicio4.jpg" alt="Ilustración de la Agrimensura">
+            </div>
+            <div class="services__card--body">
+                <h4 >Mensuras de Posesión / Usurpaciones</h4>
+                <p>¿Compró una propiedad o un terreno y no puede escriturar? ¿ Esta en posesión de un inmueble y quiere escriturarlo a su nombre?</p>
+            </div>
           </div>
-      </div>
-      <div class="services__card">
-        <div class="services__card--img">
-            <img src="../images/servicio5.png" alt="Ilustración de la Agrimensura">
-        </div>
-        <div class="services__card--body">
-            <h4 >Planos de Propiedad Horizontal</h4>
-            <p>¿Construyó casas dentro de su propiedad y desea venderlas por separado?, ¿Quiere realizar un emprendimiento dentro de su propiedad?</p>
-        </div>
-    </div>
+          <div class="services__card">
+            <div class="services__card--img">
+                <img src="../images/servicio5.png" alt="Ilustración de la Agrimensura">
+            </div>
+            <div class="services__card--body">
+                <h4 >Planos de Propiedad Horizontal</h4>
+                <p>¿Construyó casas dentro de su propiedad y desea venderlas por separado?, ¿Quiere realizar un emprendimiento dentro de su propiedad?</p>
+            </div>
+          </div> 
+          <div class="services__card">
+            <div class="services__card--img">
+                <img src="../images/servicio6.jpg" alt="Ilustración de la Agrimensura">
+            </div>
+            <div class="services__card--body">
+                <h4 >Georreferenciación</h4>
+                <p>Determinación de las coordenadas geodésicas de todos sus vértices, vinculadas a un marco de referencia global.</p>
+            </div>
+          </div>
       </div>
     </section>
 
     <!--------------- Footer --------------->
     <footer class="footer"> 
-        <div class="footer__container">
-            <div class="footer__container--left">
-                <p>Pérez e Hijo Agrimensores &copy; 2021</p>
-            </div>
-            <!-- Transition -->
-            <div class="footer__container--right">
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-        </div>
+      <div class="footer__container">
+          <div class="footer-brand">
+              <p>Pérez e Hijo Agrimensores &copy; 2021</p>
+          </div>
+          <div class="footer-links">
+            <a href="https://www.linkedin.com/in/magdalena-ines-perez/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/magdalena-ines-perez/">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/magdalena-ines-perez/">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+      </div>
     </footer>
+
+  <script src="../js/main.js"></script>
 
   </body>
 </html>
