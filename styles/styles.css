@@ -348,8 +348,8 @@
 
 .faq__box__container .accordion .answer {
   max-height: 0;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   background: #101010;
   -webkit-transition: max-height 650ms;
   transition: max-height 650ms;
@@ -1529,7 +1529,7 @@ body {
 
 .contact .contact__box__tittle {
   margin-top: 10em;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .contact .contact__box__tittle h3 {
@@ -1537,6 +1537,7 @@ body {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 400;
+  margin-bottom: 2.5rem;
 }
 
 .contact .contact__box__tittle h3 span {
